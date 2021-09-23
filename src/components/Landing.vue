@@ -12,8 +12,8 @@
       </div>
       <p class="text-orange">Вас беспокоит вопрос о том, <br> КОГДА ВЫ ПОКИНИТЕ ЭТОТ МИР И ПРИ <br> КАКИХ ОБСТОЯТЕЛЬСТВАХ? </p>
       
-      <button class="button left-blick"> Да</button>
-      <button class="button right-blick"> Нет </button>
+      <button class="button blick"> Да</button>
+      <button class="button blick"> Нет </button>
 
       <p class="text-mini">Онлайн предсказание</p>
     </div>
@@ -32,4 +32,33 @@
     </div>
   </div>
 
+  <div class="section_three">
+    <div class="container">
+      <p>Многие не верят <br>
+      предсказаниям и мы решили <br>
+      доказать каждому, <br>
+      <span> что прогноз может изменить <br>
+       жизнь любого человека! </span></p>
+    </div>
+  </div>
+
+  <div class="section_four">
+    <div class="container">
+      <p class="text-orange">БОИТЕСЬ ЛИ ВЫ УМЕРЕТЬ?</p>
+      
+      <button class="button blick"> Да</button>
+      <button class="button blick"> Нет </button>
+
+      <p class="text-mini">Онлайн предсказание</p>
+    </div>
+  </div>
+
+  <div class="section_five">
+    <img class="rune" src="./../assets/img/rune1.svg" alt="Руна">
+    <p class="text-magic">
+      Вы, конечно, умрете. <br> 
+      И все, с кем вы знакомы, <br> 
+      тоже однажды умрут. </p>
+    <img class="rune"  src="./../assets/img/rune2.svg" alt="Руна">
+  </div>
 </template>
