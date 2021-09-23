@@ -12,8 +12,8 @@
       </div>
       <p class="text-orange">Вас беспокоит вопрос о том, <br> КОГДА ВЫ ПОКИНИТЕ ЭТОТ МИР И ПРИ <br> КАКИХ ОБСТОЯТЕЛЬСТВАХ? </p>
       
-      <button class="button blick"> Да</button>
-      <button class="button blick"> Нет </button>
+      <p class="button blick" @click="scrollTo('scroll_question')"> Да </p>
+      <p class="button blick" @click="scrollTo('scroll_question')"> Нет </p>
 
       <p class="text-mini">Онлайн предсказание</p>
     </div>
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <div class="section_four">
+  <div ref="scroll_question" class="section_four">
     <div class="container">
       <p class="text-orange">БОИТЕСЬ ЛИ ВЫ УМЕРЕТЬ?</p>
       
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <div class="section_five">
+  <div  class="section_five">
     <div class="container">
       <img class="rune" src="./../assets/img/rune1.svg" alt="Руна">
       <p class="text-magic">
@@ -64,4 +64,15 @@
       <img class="rune"  src="./../assets/img/rune2.svg" alt="Руна">
     </div>
   </div>
+  
 </template>
+
+<script>
+export default {
+  name: 'App',
+
+  methods: {
+    scrollTo(id) { this.$refs[id].scrollIntoView() }
+  }
+}
+</script>

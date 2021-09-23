@@ -7,17 +7,24 @@
 	padding: 0;
 }
 
+html
+{
+	scroll-behavior: smooth;
+}
+
 a, button
 {
 	display: inline-block;
 
 	cursor: pointer;
+	text-decoration: none;
 }
 
 html
 {
 	height: 100%;
 }
+
 body
 {
 	overflow-x: hidden;
@@ -54,11 +61,15 @@ hr
 
 .button
 {
+	cursor: pointer;
 	font-size: 20px;
 
 	position: relative;
 
+	display: flex;
 	overflow: hidden;
+	align-items: center;
+	justify-content: center;
 
 	width: 310px;
 	height: 70px;
