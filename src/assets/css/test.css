@@ -173,3 +173,45 @@
 	border: 10px solid transparent;
 	border-top: 15px solid #FFFFFF;
 }
+
+#test .container
+{
+	position: relative;
+}
+
+#test .container::before
+{
+	position: absolute;
+	bottom: 75px;
+	left: 0;
+
+	width: 160px;
+	height: 160px;
+	margin-bottom: 50px;
+	margin-left: -60px;
+
+	content: "";
+
+	background-image: url("./../img/moon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#test .container::after
+{
+	position: absolute;
+	right: 0;
+	top: 75px;
+
+	width: 260px;
+	height: 170px;
+	margin-right: -120px;
+	margin-bottom: 360px;
+
+	content: "";
+
+	background-image: url("./../img/eye.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+

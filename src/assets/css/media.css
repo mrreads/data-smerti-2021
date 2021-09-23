@@ -15,18 +15,26 @@
 		background-size: auto 95%;
 	}
 
-	.section_five .container::after
+	.section_five .container::after, #test .container::after
 	{
 		width: 170px;
 		height: 110px;
 		margin-right: -70px;
 	}
 
-	.section_five .container::before
+	.section_five .container::before, #test .container::before
 	{
 		width: 100px;
 		height: 100px;
 		margin-left: -30px;
+	}
+	#test .container::after
+	{
+		top: 125px;
+	}
+	#test .container::before
+	{
+		bottom: 40px;
 	}
 }
 
