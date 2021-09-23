@@ -3,6 +3,9 @@
 </template>
 
 <script>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import './assets/css/general.css';
 import './assets/css/media.css';
 
@@ -12,6 +15,9 @@ export default {
   name: 'App',
   components: {
     Langing
+  },
+  created () {
+    AOS.init()
   }
 }
 </script>

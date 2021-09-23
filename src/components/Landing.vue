@@ -12,14 +12,14 @@
       </div>
       <p class="text-orange">Вас беспокоит вопрос о том, <br> КОГДА ВЫ ПОКИНИТЕ ЭТОТ МИР И ПРИ <br> КАКИХ ОБСТОЯТЕЛЬСТВАХ? </p>
       
-      <button class="button blick"> Да</button>
-      <button class="button blick"> Нет </button>
+      <a class="button blick" href="#test"> Да</a>
+      <a class="button blick" href="#test"> Нет</a>
 
       <p class="text-mini">Онлайн предсказание</p>
     </div>
   </div>
 
-  <div class="section_two">
+  <div data-aos="fade-up" data-aos-duration="2000" class="section_two">
     <div class="container">
       <div class="border">
         <img class="image" src="./../assets/img/section2_image.png" alt="Руки">
@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="section_three">
+  <div data-aos="fade-up" data-aos-duration="2000"  class="section_three">
     <div class="container">
       <p>Многие не верят <br>
       предсказаниям и мы решили <br>
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <div class="section_four">
+  <div id="test" data-aos="fade-up" data-aos-duration="2000"  class="section_four">
     <div class="container">
       <p class="text-orange">БОИТЕСЬ ЛИ ВЫ УМЕРЕТЬ?</p>
       
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <div class="section_five">
+  <div data-aos="fade-up" data-aos-duration="2000"  class="section_five">
     <div class="container">
       <img class="rune" src="./../assets/img/rune1.svg" alt="Руна">
       <p class="text-magic">
