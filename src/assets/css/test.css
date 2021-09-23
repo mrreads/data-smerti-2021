@@ -1,0 +1,48 @@
+#app
+{
+	display: flex;
+	flex-flow: column;
+}
+
+#test
+{
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+}
+
+#test .container
+{
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+#test .text-magic
+{
+	margin-top: 50px;
+	margin-bottom: 40px;
+
+	opacity: 0.6;
+}
+
+#test .text-orange
+{
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+#test .questions-wrapper
+{
+    display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#test .test-count
+{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}

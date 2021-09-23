@@ -27,6 +27,9 @@ html
 
 body
 {
+	display: flex;
+	flex-flow: column nowrap;
+
 	overflow-x: hidden;
 
 	width: 100%;
@@ -39,6 +42,11 @@ body
 	background-color: #202024;
 }
 
+#app
+{
+	flex-grow: 1;
+}
+
 body, a, input, button
 {
 	font-family: "Roboto", sans-serif;
@@ -49,6 +57,7 @@ body, a, input, button
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
+	flex-grow: 1;
 }
 
 hr

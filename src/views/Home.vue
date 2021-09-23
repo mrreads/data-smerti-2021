@@ -47,8 +47,8 @@
     <div class="container">
       <p class="text-orange">БОИТЕСЬ ЛИ ВЫ УМЕРЕТЬ?</p>
       
-      <button class="button blick"> Да</button>
-      <button class="button blick"> Нет </button>
+      <router-link to="/test" class="button blick"> Да</router-link>
+      <router-link to="/test" class="button blick"> Нет </router-link>
 
       <p class="text-mini">Вопрос 1-5</p>
     </div>
