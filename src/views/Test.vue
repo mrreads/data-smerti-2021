@@ -22,8 +22,6 @@ import Loader from '../components/Loader.vue';
 
 import Final from '../components/Final.vue';
 
-import './../assets/css/test.css';
-
 export default {
    components: {
     Questions2,
