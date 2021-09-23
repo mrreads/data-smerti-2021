@@ -85,13 +85,19 @@ export default {
             percent: 0
         }
     },
-    created() {
-        setInterval(() => {
+    mounted() {
+        const progressFill = setInterval(() => {
             if (this.percent < 100)
                 this.percent++;
 
             this.$refs['progress'].style.width = `${this.percent}%`;
-        }, 150)
+
+            if (this.percent >= 100)
+            {
+                clearInterval(progressFill);
+                this.$parent.currentQuestion++;
+            }
+        }, 100)
     }
 }
 </script>

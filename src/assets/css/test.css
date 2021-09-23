@@ -4,14 +4,14 @@
 	flex-flow: column;
 }
 
-#test
+#test, #final
 {
 	display: flex;
 	flex-flow: column;
 	flex-grow: 1;
 }
 
-#test .container
+#test .container, #final .container
 {
 	display: flex;
 	align-items: center;
@@ -34,7 +34,7 @@
 	text-transform: uppercase;
 }
 
-#test .questions-wrapper
+.questions-wrapper
 {
 	display: flex;
 	align-items: center;
@@ -43,14 +43,16 @@
 	justify-content: center;
 }
 
-#test .test-count
+.test-count
 {
 	margin-top: 30px;
 	margin-bottom: 25px;
 }
 
-#test .message
+#test .message, #final .message
 {
+    max-width: 480px;
+    width: 100%;
 	position: relative;
 
 	margin-top: 35px;
@@ -65,7 +67,7 @@
 	background-color: #FFFFFF;
 }
 
-#test .message::after
+.message::after
 {
 	position: absolute;
 	right: 25px;

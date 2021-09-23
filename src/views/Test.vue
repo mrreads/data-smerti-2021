@@ -7,7 +7,8 @@
   <Questions4 v-if="currentQuestion == 4"></Questions4>
   <Questions5 v-if="currentQuestion == 5"></Questions5>
   <Audio v-if="currentQuestion == 6"></Audio>
-
+  
+  <Final v-if="currentQuestion == 7"></Final>
 </template>
 
 <script>
@@ -19,6 +20,8 @@ import Questions5 from '../components/Question-5.vue';
 import Audio from '../components/Audio.vue';
 import Loader from '../components/Loader.vue';
 
+import Final from '../components/Final.vue';
+
 import './../assets/css/test.css';
 
 export default {
@@ -28,7 +31,8 @@ export default {
     Questions4,
     Questions5,
     Audio,
-    Loader
+    Loader,
+    Final
   },
 
   data() {
