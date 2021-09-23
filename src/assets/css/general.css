@@ -84,12 +84,18 @@ hr
 	margin-bottom: 35px;
 
 	cursor: pointer;
+	transition: 0.3s all;
 
 	color: #FFFFFF;
 	border: 0;
 	border-radius: 50px;
 	outline: 0;
 	background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+}
+
+.button:hover
+{
+	transform: scale(1.1);
 }
 
 .button.blick::after
@@ -371,17 +377,41 @@ hr
 	background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
 }
 
-.select:after
+.select:hover::after
+{
+	animation-play-state:running;
+}
+
+.select::after
 {
 	position: absolute;
 	top: 50%;
 	right: 35px;
 
 	content: "";
+	transition: 0.3s all;
 	transform: translate(0, -15%);
+	animation: 1s arrowDown infinite;
+	animation-play-state: paused;
 
 	border: 10px solid transparent;
 	border-top: 8px solid #202024;
+}
+
+@keyframes arrowDown
+{
+	0%
+	{
+		top: 50%;
+	}
+	50%
+	{
+		top: 60%;
+	}
+	100%
+	{
+		top: 50%;
+	}
 }
 
 .select-wrapper
@@ -401,7 +431,7 @@ hr
 	width: 100%;
 	max-height: 400px;
 
-	border-radius: 35px;
+	border-radius: 20px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	background: linear-gradient(90deg, rgba(228, 228, 228, 1) -6.2%, rgba(203, 203, 203, 1) 100%);

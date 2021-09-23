@@ -9,7 +9,7 @@
                 <p class="text-orange">УКАЖИТЕ СВОЮ ДАТУ <br> РОЖДЕНИЯ</p>
                 
                 <div class="select-wrapper">
-                    <div class="select" @click="expandDay = true" ref="eDay"> {{ selectedDay }} </div>
+                    <div class="select" @click="expandDay = true; expandMonth = false; expandYear = false;" ref="eDay"> {{ selectedDay }} </div>
                     <div class="select-dropdown" v-if="expandDay">
                         <p v-for="index in 31" :key="index" @click="selectedDay = index, expandDay = false; check()"> {{ index }}</p>
                     </div>
@@ -17,14 +17,14 @@
 
 
                 <div class="select-wrapper">
-                    <div class="select" @click="expandMonth = true" ref="eMonth"> {{ selectedMonth }} </div>
+                    <div class="select" @click="expandDay = false; expandMonth = true; expandYear = false;" ref="eMonth"> {{ selectedMonth }} </div>
                     <div class="select-dropdown" v-if="expandMonth">
                         <p v-for="index in 12" :key="index" @click="selectedMonth = index, expandMonth = false; check()"> {{ index }}</p>
                     </div>
                 </div>
 
                 <div class="select-wrapper">
-                    <div class="select" @click="expandYear = true" ref="eYear"> {{ selectedYear }} </div>
+                    <div class="select" @click="expandDay = false; expandMonth = false; expandYear = true;" ref="eYear"> {{ selectedYear }} </div>
                     <div class="select-dropdown" v-if="expandYear">
                         <p v-for="(index) in yearRange(1900, 2002)" :key="index" @click="selectedYear = index, expandYear = false; check()"> {{ index }}</p>
                     </div>

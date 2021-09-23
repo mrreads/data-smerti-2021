@@ -1,6 +1,6 @@
 <template>
 
-  <div class="section_one">
+  <div class="section_one" data-aos="zoom-out-up">
     <div class="container">
       <p class="text-mini">Лучшие астрологи и экстрасенсы Румынии</p>
       <hr>
@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="section_two">
+  <div class="section_two" data-aos="fade-up" data-aos-duration="2000">
     <div class="container">
       <div class="border">
         <img class="image" src="./../assets/img/section2_image.png" alt="Руки">
@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="section_three">
+  <div class="section_three" data-aos="fade-up" data-aos-duration="3000">
     <div class="container">
       <p>Многие не верят <br>
       предсказаниям и мы решили <br>
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <div ref="scroll_question" class="section_four">
+  <div ref="scroll_question" class="section_four" data-aos="zoom-out-up">
     <div class="container">
       <p class="text-orange">БОИТЕСЬ ЛИ ВЫ УМЕРЕТЬ?</p>
       
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <div  class="section_five">
+  <div  class="section_five" data-aos="zoom-out-up">
     <div class="container">
       <img class="rune" src="./../assets/img/rune1.svg" alt="Руна">
       <p class="text-magic">

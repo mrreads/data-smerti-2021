@@ -51,6 +51,19 @@
 	color: rgba(255, 255, 255, 0.6);
 }
 
+
+@keyframes slideDown
+{
+	from
+	{
+		transform: translate(0%, -150%);
+	}
+	to
+	{
+		transform: translate(0%, 0%);
+	}
+}
+
 #test .message, #final .message
 {
 	position: relative;
@@ -67,6 +80,8 @@
 	color: rgba(32, 32, 36, 1);
 	border-radius: 5px;
 	background-color: #FFFFFF;
+
+	animation: 2s slideDown 1;
 }
 
 .message::after
@@ -96,7 +111,7 @@
 #final .text-orange
 {
 	font-size: 25px;
-	font-weight: bold;
+	font-weight: normal;
 	line-height: 35px;
 
 	box-sizing: border-box;
