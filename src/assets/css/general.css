@@ -115,8 +115,8 @@ hr
 /* SECTION ONE */
 .section_one
 {
-    background-size: cover;
 	background-image: url("./../img/section1_background.png");
+	background-size: cover;
 }
 
 .section_one .container
@@ -169,16 +169,59 @@ hr
 
 .section_one .text-large
 {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 .section_one .text-orange
 {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .section_one .border-wrapper
 {
-    margin-top: 65px;
-    margin-bottom: 25px;
+	margin-top: 65px;
+	margin-bottom: 25px;
+}
+
+/* SECTION TWO */
+.section_two .container
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 70px 0;
+}
+
+.section_two .border
+{
+    margin-top: 70px;
+	position: relative;
+
+	padding: 90px 45px;
+	padding-top: 130px;
+
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;
+}
+
+.section_two .border .image
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	border-radius: 100%;
+}
+
+.section_two .border p
+{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.section_two .border span
+{
+    color:rgba(246, 200, 102, 1);
 }
