@@ -45,3 +45,11 @@
         animation: rotate 3s infinite;
     }
 </style>
+
+<script>
+export default {
+  mounted() {
+    document.title = 'Подождите';
+  }
+}
+</script>

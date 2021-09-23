@@ -19,3 +19,11 @@
         </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    document.title = 'Вопрос 2';
+  }
+}
+</script>

@@ -24,8 +24,8 @@ export default {
             message: null
         }
     },
-
-    created() {
+    mounted() {
+        document.title = 'Вопрос 5';
         const age = this.$parent.userAge;
 
         if (age >= 18 || age < 35)

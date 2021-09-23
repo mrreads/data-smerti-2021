@@ -21,10 +21,11 @@
 
 <script>
 export default {
-    created() {
+    mounted() {
         this.$parent.loaderVisible = true;
         setTimeout(()=> {
             this.$parent.loaderVisible = false;
+            document.title = 'Вопрос 4';
         }, 2000);
     }
 }

@@ -86,6 +86,7 @@ export default {
         }
     },
     mounted() {
+        document.title = 'Запись сообщения';
         const progressFill = setInterval(() => {
             if (this.percent < 100)
                 this.percent++;

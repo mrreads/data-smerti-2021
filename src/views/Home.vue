@@ -71,6 +71,10 @@
 export default {
   name: 'App',
 
+  mounted() {
+    document.title = 'Дата смерти 2021';
+  },
+
   methods: {
     scrollTo(id) { this.$refs[id].scrollIntoView() }
   }

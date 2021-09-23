@@ -379,7 +379,7 @@ hr
 
 .select:hover::after
 {
-	animation-play-state:running;
+	animation-play-state: running;
 }
 
 .select::after

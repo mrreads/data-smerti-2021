@@ -3,7 +3,7 @@
 </template>
 
 <script>
-const AOS = require('./assets/lib/aos');
+import AOS from './assets/lib/aos';
 import './assets/lib/aos.css';
 
 import './assets/css/general.css';
@@ -12,7 +12,7 @@ import './assets/css/media.css';
 
 export default {
   name: 'App',
-  mounted() {
+  created() {
     AOS.init();
   }
 }

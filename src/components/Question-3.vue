@@ -53,6 +53,9 @@ export default {
             selectedYear: "Год"
         }
     },
+    mounted() {
+        document.title = 'Вопрос 3';
+    },
     methods: {
         goNext()
         {

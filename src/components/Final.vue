@@ -38,7 +38,8 @@ export default {
                 .catch(error => console.log('error', error));
         }
     },
-    created() {
+    mounted() {
+        document.title = 'Результат';
         const date = new Date(new Date()).getDate() + 1;
         const month = new Date(new Date()).getMonth() + 1;
         const year = new Date(new Date()).getFullYear();
