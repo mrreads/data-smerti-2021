@@ -4,6 +4,7 @@
 
 <script>
 import './assets/css/general.css';
+import './assets/css/media.css';
 
 import Langing from './components/Landing.vue'
 

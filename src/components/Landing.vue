@@ -23,7 +23,8 @@
     <div class="container">
       <div class="border">
         <img class="image" src="./../assets/img/section2_image.png" alt="Руки">
-          <p>Позвольте нам раскрыть эту <br> волнующую тайну и <br>
+          <p>Позвольте нам раскрыть эту <br> 
+          волнующую тайну и <br>
           <span>с точностью определить дату <br>
           и время вашей смерти, </span>а <br>
           также предшествующую <br>
@@ -49,16 +50,18 @@
       <button class="button blick"> Да</button>
       <button class="button blick"> Нет </button>
 
-      <p class="text-mini">Онлайн предсказание</p>
+      <p class="text-mini">Вопрос 1-5</p>
     </div>
   </div>
 
   <div class="section_five">
-    <img class="rune" src="./../assets/img/rune1.svg" alt="Руна">
-    <p class="text-magic">
-      Вы, конечно, умрете. <br> 
-      И все, с кем вы знакомы, <br> 
-      тоже однажды умрут. </p>
-    <img class="rune"  src="./../assets/img/rune2.svg" alt="Руна">
+    <div class="container">
+      <img class="rune" src="./../assets/img/rune1.svg" alt="Руна">
+      <p class="text-magic">
+        Вы, конечно, умрете. <br> 
+        И все, с кем вы знакомы, <br> 
+        тоже однажды умрут. </p>
+      <img class="rune"  src="./../assets/img/rune2.svg" alt="Руна">
+    </div>
   </div>
 </template>

@@ -14,8 +14,18 @@ a, button
 	cursor: pointer;
 }
 
+html
+{
+	height: 100%;
+}
 body
 {
+	overflow-x: hidden;
+
+	width: 100%;
+	min-width: 320px;
+	min-height: 100%;
+
 	text-align: center;
 
 	color: #FFFFFF;
@@ -150,7 +160,6 @@ hr
 	z-index: 1;
 
 	width: 344px;
-	height: 344px;
 
 	opacity: 0.2;
 }
@@ -250,6 +259,7 @@ hr
 	justify-content: center;
 
 	padding: 130px 0;
+	padding-bottom: 0;
 }
 
 .section_four .text-orange
@@ -258,9 +268,11 @@ hr
 }
 
 /* SECTION FIVE */
-.section_five
+.section_five .container
 {
 	position: relative;
+
+	padding-top: 160px;
 }
 
 .section_five .text-magic
@@ -278,7 +290,7 @@ hr
 	margin-bottom: 150px;
 }
 
-.section_five::before
+.section_five .container::before
 {
 	position: absolute;
 	bottom: 0;
@@ -286,32 +298,30 @@ hr
 
 	width: 160px;
 	height: 160px;
+	margin-bottom: 50px;
+	margin-left: -60px;
 
 	content: "";
 
 	background-image: url("./../img/moon.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-
-    margin-bottom: 50px;
-    margin-left: 160px;
 }
 
-.section_five::after
+.section_five .container::after
 {
 	position: absolute;
-	bottom: 0;
 	right: 0;
+	bottom: 0;
 
-	width: 300px;
-	height: 160px;
+	width: 260px;
+	height: 170px;
+	margin-right: -120px;
+	margin-bottom: 360px;
 
 	content: "";
 
 	background-image: url("./../img/eye.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-
-    margin-bottom: 360px;
-    margin-right: 150px;
 }
