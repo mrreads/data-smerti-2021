@@ -1,6 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a, button
+{
+	display: inline-block;
+
+	cursor: pointer;
+}
+
+body
+{
+	text-align: center;
+
+	color: #FFFFFF;
+	background-color: #202024;
+}
+
+body, a, input, button
+{
+	font-family: "Roboto", sans-serif;
+}
+
+.container
+{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+hr
+{
+	width: 100%;
+	height: 0;
+
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button
+{
+	font-size: 20px;
+
+	position: relative;
+
+	color: #FFFFFF;
+	border-radius: 50px;
+	background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+}
+
+.button
+{
+	margin-bottom: 35px;
+}
+
+.button.left-blick::after
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 50%;
+	height: 100%;
+
+	content: "";
+
+	background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
+}
+
+.button.right-blick::after
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 50%;
+	height: 100%;
+
+	content: "";
+
+	background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
+}
+
+/* FONTS */
+.text-mini
+{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.text-large
+{
+	font-size: 25px;
+	line-height: 29px;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.text-orange
+{
+	font-size: 25px;
+	line-height: 35px;
+
+	color: #F6C866;
+}
+
+/* SECTION ONE */
+.section_one
+{
+    background-size: cover;
+	background-image: url("./../img/section1_background.png");
+}
+
+.section_one .container
+{
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.section_one .border-wrapper
+{
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section_one .border
+{
+	z-index: 1;
+
+	width: 344px;
+	height: 344px;
+
+	opacity: 0.2;
+}
+
+.section_one .border-wrapper .image
+{
+	position: absolute;
+	z-index: 5;
+
+	border-radius: 100%;
+}
+
+.section_one .button
+{
+	width: 310px;
+	height: 70px;
+}
+
+
+.section_one p:first-child
+{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.section_one .text-large
+{
+    margin-top: 10px;
+}
+
+.section_one .text-orange
+{
+    margin-bottom: 40px;
+}
+
+.section_one .border-wrapper
+{
+    margin-top: 65px;
+    margin-bottom: 25px;
 }
