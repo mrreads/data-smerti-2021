@@ -16,14 +16,74 @@
 
             <p class="text-mini terms">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE <br> DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI</p>
         </div>
+
+        <div class="popup" v-if="showPupup" data-aos="fade-left">
+            <p class="text-orange">Данные из API</p>
+            <p v-for="(value, name) in fetchData" :key="name"> <strong> {{name}}: </strong> <span>{{value}} </span> </p>
+        </div>
   </div>
 </template>
+
+<style scoped>
+.popup
+{
+    opacity: 0.9;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px 25px;
+    align-items: center;
+    position: fixed;
+
+    flex-grow: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #202024;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.popup p
+{
+    margin: 5px 0;
+}
+
+.popup p strong
+{
+    text-transform: capitalize;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+#final .popup .text-orange
+{
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    border: 0px;
+}
+
+@media screen and (max-width: 425px)
+{
+    .popup
+    {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+</style>
 
 <script>
 export default {
     data() {
         return {
-            date: null
+            date: null,
+
+            showPupup: false,
+            fetchData: null
         }
     },
     methods: {
@@ -33,7 +93,8 @@ export default {
                 .then(response => response.json())
                 .then(result => 
                 {
-                    console.log(result)
+                    this.fetchData = result;
+                    this.showPupup = true;
                 })
                 .catch(error => console.log('error', error));
         }
