@@ -121,10 +121,12 @@
 		line-height: 25px;
 	}
 
-	.section_one .text-mini:last-child
+	.section_one .text-mini:last-child, .section_four .text-mini
 	{
 		font-size: 12px;
 		line-height: 14px;
+
+		width: 100%;
 	}
 
 	.button, .select
@@ -170,13 +172,6 @@
 		background-position: 30% 100%;
 		background-size: cover;
 	}
-
-	.section_four .text-orange
-	{
-		font-size: 16px;
-		line-height: 19px;
-	}
-
 	.section_five .text-magic
 	{
 		font-size: 20px;
