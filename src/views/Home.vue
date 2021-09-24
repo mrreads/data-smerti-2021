@@ -63,6 +63,7 @@
         тоже однажды умрут. </p>
       <img class="rune"  src="./../assets/img/rune2.svg" alt="Руна">
     </div>
+    <p class="terms">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI, </p>
   </div>
   
 </template>

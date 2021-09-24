@@ -36,10 +36,48 @@
 	{
 		bottom: 40px;
 	}
+	#test .message, #final .message
+	{
+		font-size: 21px;
+	}
+	.text-orange
+	{
+		font-size: 23px;
+	}
+	.button
+	{
+		font-size: 18px;
+
+		width: 280px;
+		height: 60px;
+	}
+	.select-dropdown p
+	{
+		padding: 12px 25px;
+	}
+	.text-mini, .text-orange, .text-magic, #test .message, #final .message
+	{
+		max-width: 380px;
+		margin: 0 auto;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+	.section_five .text-magic
+	{
+		margin: 80px auto;
+	}
+	.terms
+	{
+		font-size: 9px;
+	}
 }
 
 @media screen and (max-width: 425px)
 {
+	.section_two .border .image
+	{
+		width: 95px;
+	}
 	br:not(.section_five br)
 	{
 		display: none;
@@ -144,7 +182,10 @@
 		font-size: 20px;
 		line-height: 28px;
 	}
-
+	#test .text-magic
+	{
+		min-height: 110px;
+	}
 	#test .text-magic, #final .text-magic
 	{
 		font-size: 14px;
@@ -214,7 +255,7 @@
 		height: 48px;
 	}
 
-	#final .terms
+	.terms
 	{
 		font-size: 7px;
 		line-height: 9px;
