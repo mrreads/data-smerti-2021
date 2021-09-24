@@ -63,7 +63,8 @@
         тоже однажды умрут. </p>
       <img class="rune"  src="./../assets/img/rune2.svg" alt="Руна">
     </div>
-    <p class="terms">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI, </p>
+    <p class="terms" @click="changeFooterVisible">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI. </p>
+    <p class="terms" data-aos="zoom-out-up" v-if="showFooter" @click="changeFooterVisible">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI, TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI, TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI. </p>
   </div>
   
 </template>
@@ -71,13 +72,20 @@
 <script>
 export default {
   name: 'App',
+  
+  data() {
+    return {
+      showFooter: false
+    }
+  },
 
   mounted() {
     document.title = 'Дата смерти 2021';
   },
 
   methods: {
-    scrollTo(id) { this.$refs[id].scrollIntoView() }
+    scrollTo(id) { this.$refs[id].scrollIntoView() },
+    changeFooterVisible() { this.showFooter = !this.showFooter; }
   }
 }
 </script>
